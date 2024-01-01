@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6f3afe6e.css",
+    "main.js": "/static/js/main.32246bb2.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/static/js/787.c4e7f8f9.chunk.js",
+    "static/media/pexels-tirachard-kumtanom-347139.jpg": "/static/media/pexels-tirachard-kumtanom-347139.7c3c911b8fb0fa509dd3.jpg",
+    "static/media/download (1).png": "/static/media/download (1).d2aa923dda60f5c19bb0.png",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/index.html",
+    "main.6f3afe6e.css.map": "/static/css/main.6f3afe6e.css.map",
+    "main.32246bb2.js.map": "/static/js/main.32246bb2.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/static/js/787.c4e7f8f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6f3afe6e.css",
+    "static/js/main.32246bb2.js"
+  ]
+}
