@@ -7,7 +7,7 @@ app.use(cors())
 app.use(express.json())
 
 const path=require('path');
-app.use(express.static(path.join(__dirname+'./build')));
+app.use(express.static(path.join(__dirname+'/build')));
 
 const PORT  = process.env.PORT || 8080 
 mongoose.connect("mongodb+srv://ajith1323:Achanamma@cluster0.3jql3om.mongodb.net/Vendors?retryWrites=true&w=majority")
@@ -63,7 +63,7 @@ app.get("/",async(req,res)=>{
     mobile
 }
 */
-app.post("/create",async(req,res)=>{
+app.post("api/create",async(req,res)=>{
     console.log(req.body)
     const data = new VendorData(req.body)
     await data.save()
@@ -81,7 +81,7 @@ app.post("/create",async(req,res)=>{
  * }
  */
 
-app.put("/update",async(req,res)=>{
+app.put("api/update",async(req,res)=>{
     console.log(req.body)
     const { _id,...rest} = req.body 
 
@@ -92,7 +92,7 @@ app.put("/update",async(req,res)=>{
 
 //delete api
 // http://localhost:8080/delete/id
-app.delete("/delete/:id",async(req,res)=>{
+app.delete("api/delete/:id",async(req,res)=>{
     const id = req.params.id
     console.log(id)
     const data = await VendorData.deleteOne({_id : id})
